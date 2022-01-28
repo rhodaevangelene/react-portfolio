@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import About from "./components/About"
+import Portfolio from "./components/Portfolio"
 import './App.css';
 
 
@@ -14,7 +15,8 @@ function App() {
     switch (currentTab) {
       case "about":
         return <About />;
-      
+       case "portfolio":
+      return <Portfolio />;
       default:
         return null;
     }
