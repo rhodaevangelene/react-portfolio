@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import About from "./components/About"
 import './App.css';
 
 
@@ -10,7 +11,13 @@ function App() {
   const [currentTab, setCurrentTab] = useState("about");
 
    const renderTab = () => {
-  
+    switch (currentTab) {
+      case "about":
+        return <About />;
+      
+      default:
+        return null;
+    }
    };
 
   return (
